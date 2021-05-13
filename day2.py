@@ -1,3 +1,4 @@
+# 1. longest word from list
 def longest():
     words = ['java', 'c++', 'python']
     length = len(words[0])
@@ -6,31 +7,31 @@ def longest():
         if (len(i) > length):
             length = len(i)
             max = i
-            print('longest word : ', max, ' length :', length)
-
+            print('longest word :', max, '; length :', length)
 
 longest()
 
 
+# 2. exchange first and last char
 def swap():
     word = 'abcd'
-    print(word[-1] + word[-3:-1] + word[-4])
-
+    print('original:', word)
+    print('swap:', word[-1] + word[-3:-1] + word[-4])
 
 swap()
 
 
+# 3. reverse of string
 def reverse():
     msg = 'i learn python'
     print('original :', msg)
     print('reverse :', msg[::-1])
 
-
 reverse()
 
 
+# 4. remove duplicate from string
 def duplicate():
-    # remove duplicate from string
     t = ''
     st = 'i learn python'
     for i in st:
@@ -39,6 +40,5 @@ def duplicate():
         else:
             t = t + i
     print(t)
-
 
 duplicate()
